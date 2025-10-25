@@ -7,124 +7,46 @@
     <meta name="author" content="Pudilicious Dessert" />
     <title>Pudilicious - Surga Puding Lezat</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/startbootstrap-agency-gh-pages/assets/favicon.ico" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="/startbootstrap-agency-gh-pages/css/styles.css" rel="stylesheet" />
 
     <style>
-      body {
-        background-color: #ffeef5;
-        font-family: 'Poppins', sans-serif;
-      }
-      #mainNav {
-        background-color: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      }
-      #mainNav .navbar-brand {
-        font-family: 'Pacifico', cursive;
-        color: #ff6fa5 !important;
-        font-size: 1.8rem;
-      }
-      #mainNav .nav-link {
-        color: #ff6fa5 !important;
-        font-weight: 600;
-      }
+      body { background-color: #ffeef5; font-family: 'Poppins', sans-serif; }
+      #mainNav { background-color: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); }
+      #mainNav .navbar-brand { font-family: 'Pacifico', cursive; color: #ff6fa5 !important; font-size: 1.8rem; }
+      #mainNav .nav-link { color: #ff6fa5 !important; font-weight: 600; }
       header.masthead {
-        background-image: url('/eca-sehun/assets/img/header-bg.jpg');
+        background-image: url('/startbootstrap-agency-gh-pages/assets/img/header-bg.jpg');
         background-size: cover;
         background-position: center;
         text-align: center;
         color: white;
         padding: 12rem 0;
       }
-      header.masthead .masthead-heading {
-        font-family: 'Pacifico', cursive;
-        font-size: 3rem;
-        color: #ff9ec7;
-      }
-      header.masthead .masthead-subheading {
-        font-size: 1.25rem;
-        color: #fff;
-        opacity: 0.9;
-      }
-      .btn-primary {
-        background-color: #ff8fc1;
-        border: none;
-      }
-      .btn-primary:hover {
-        background-color: #ff6fa5;
-      }
-      .section-heading {
-        font-family: 'Pacifico', cursive;
-        color: #ff6fa5;
-      }
-      .section-subheading {
-        color: #b85c84;
-      }
-      .portfolio-item img {
-        border-radius: 20px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      }
-      .portfolio-caption {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 15px;
-        text-align: center;
-        margin-top: -1rem;
-      }
-      .portfolio-caption-heading {
-        color: #ff6fa5;
-        font-size: 1.25rem;
-        font-weight: 600;
-      }
-      .portfolio-caption-subheading {
-        color: #b85c84;
-        font-size: 0.95rem;
-      }
-      .price {
-        color: #ff6fa5;
-        font-weight: 700;
-        margin-top: 0.5rem;
-      }
-      footer {
-        background-color: #fff;
-        padding: 2rem 0;
-        color: #b85c84;
-      }
-      .modal-content {
-        border-radius: 15px;
-      }
-      .cart-item {
-        border-bottom: 1px solid #f0c3d2;
-        padding: 10px 0;
-      }
+      header.masthead .masthead-heading { font-family: 'Pacifico', cursive; font-size: 3rem; color: #ff9ec7; }
+      header.masthead .masthead-subheading { font-size: 1.25rem; color: #fff; opacity: 0.9; }
+      .btn-primary { background-color: #ff8fc1; border: none; }
+      .btn-primary:hover { background-color: #ff6fa5; }
+      .section-heading { font-family: 'Pacifico', cursive; color: #ff6fa5; }
+      .section-subheading { color: #b85c84; }
+      .portfolio-item img { border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+      .portfolio-caption { background: white; padding: 1.5rem; border-radius: 15px; text-align: center; margin-top: -1rem; }
+      .portfolio-caption-heading { color: #ff6fa5; font-size: 1.25rem; font-weight: 600; }
+      .portfolio-caption-subheading { color: #b85c84; font-size: 0.95rem; }
+      .price { color: #ff6fa5; font-weight: 700; margin-top: 0.5rem; }
+      footer { background-color: #fff; padding: 2rem 0; color: #b85c84; }
+      .modal-content { border-radius: 15px; }
+      .cart-item { border-bottom: 1px solid #f0c3d2; padding: 10px 0; }
       #cartNotification {
-        position: fixed;
-        top: 80px;
-        right: 20px;
-        background-color: #ffb6d5;
-        color: #5a2a2a;
-        padding: 12px 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        font-weight: 600;
-        opacity: 0;
-        transition: opacity 0.4s ease, transform 0.4s ease;
-        transform: translateY(-10px);
-        z-index: 2000;
+        position: fixed; top: 80px; right: 20px; background-color: #ffb6d5; color: #5a2a2a;
+        padding: 12px 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        font-weight: 600; opacity: 0; transition: opacity 0.4s ease, transform 0.4s ease; transform: translateY(-10px); z-index: 2000;
       }
-      #cartNotification.show {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      #contact h2,
-      #contact .section-heading {
-        color: #ff6fa5 !important;
-      }
-      #contact strong {
-        color: #ff6fa5 !important;
-      }
+      #cartNotification.show { opacity: 1; transform: translateY(0); }
+      #contact h2, #contact .section-heading { color: #ff6fa5 !important; }
+      #contact strong { color: #ff6fa5 !important; }
     </style>
   </head>
 
@@ -212,12 +134,12 @@
 
     <script>
       const products = [
-        { id: 1, name: 'Puding Ball', price: 15000, img: '/eca-sehun/assets/img/portfolio/ball.jpg', variants: ['Cokelat', 'strawberry', 'mangga'] },
-        { id: 2, name: 'Puding Mix', price: 25000, img: '/eca-sehun/assets/img/portfolio/mix.jpg', variants: ['coklat strawberry', 'coklat mangga ', 'coklat matcha'] },
-        { id: 3, name: 'Puding Custom', price: 30000, img: '/eca-sehun/assets/img/portfolio/custom.jpg', variants: ['Ulang Tahun', 'wedding', 'bridal shower'] },
-        { id: 4, name: 'Puding Jelly Fruit', price: 15000, img: '/eca-sehun/assets/img/portfolio/jelly.jpg', variants: ['jeruk', 'Strawberry', 'melon'] },
-        { id: 5, name: 'Puding Karamel', price: 17000, img: '/eca-sehun/assets/img/portfolio/caramel.jpg', variants: ['Original', 'vanilla', 'Cokelat'] },
-        { id: 6, name: 'Pudilidot', price: 12000, img: '/eca-sehun/assets/img/portfolio/pudot.jpg', variants: ['bluberry', 'Anggur', 'coklat'] }
+        { id: 1, name: 'Puding Ball', price: 15000, img: '/startbootstrap-agency-gh-pages/assets/img/portfolio/ball.jpg', variants: ['Cokelat', 'strawberry', 'mangga'] },
+        { id: 2, name: 'Puding Mix', price: 25000, img: '/startbootstrap-agency-gh-pages/assets/img/portfolio/mix.jpg', variants: ['coklat strawberry', 'coklat mangga ', 'coklat matcha'] },
+        { id: 3, name: 'Puding Custom', price: 30000, img: '/startbootstrap-agency-gh-pages/assets/img/portfolio/custom.jpg', variants: ['Ulang Tahun', 'wedding', 'bridal shower'] },
+        { id: 4, name: 'Puding Jelly Fruit', price: 15000, img: '/startbootstrap-agency-gh-pages/assets/img/portfolio/jelly.jpg', variants: ['jeruk', 'Strawberry', 'melon'] },
+        { id: 5, name: 'Puding Karamel', price: 17000, img: '/startbootstrap-agency-gh-pages/assets/img/portfolio/caramel.jpg', variants: ['Original', 'vanilla', 'Cokelat'] },
+        { id: 6, name: 'Pudilidot', price: 12000, img: '/startbootstrap-agency-gh-pages/assets/img/portfolio/pudot.jpg', variants: ['bluberry', 'Anggur', 'coklat'] }
       ];
 
       const productList = document.getElementById('productList');
